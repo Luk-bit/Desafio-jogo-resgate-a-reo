@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+
+    <title>Resgate aéreo</title>
+</head>
+<body>
+<div id="container">
+    <div id="backgroundGame">
+        <div id="startGame" onclick="start()">
+            <div id="separate">
+                <h1>Resgate aéreo</h1>
+                <p>Utilize a tecla W para movimentar o helicóptero para cima, a tecla S para movimentar o helicóptero para baixo e a tecla D para atirar.</p>
+                <p>Clique aqui para iniciar!!</p>
+            </div>
+		</div>
+    </div>
+</div>
+<audio id="soundShooting"  src="./assets/sounds/Aerosmith - Dream On Legendado Tradução.mp3"          preload="auto"></audio>
+<audio id="explosionSound" src="./assets/sounds/explosao.mp3"     preload="auto"></audio>
+<audio id="music"          src="./assets/sounds/AC_DC - Back In Black (Official Video).mp3" preload="auto"></audio>
+<audio id="soundGameOver"  src="./assets/sounds/gameover.mp3"     preload="auto"></audio>
+<audio id="lostSound"      src="./assets/sounds/perdido.mp3"      preload="auto"></audio>
+<audio id="soundRescue"    src="./assets/sounds/resgate.mp3"      preload="auto"></audio>
+
+<script type="text/javascript" src="./scripts/index.js"></script>
+<script type="text/javascript" src="./scripts/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./scripts/jquery/jquery-collision.min.js"></script>
+</body>
+</html>

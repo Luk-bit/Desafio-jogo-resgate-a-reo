@@ -1,0 +1,154 @@
+@font-face {
+	font-family: BungeeRegular;
+	src: url(./fonts/BungeeRegular/Bungee-Regular.ttf);
+}
+@font-face {
+	font-family: Jost;
+	src: url(./fonts/Jost/Jost.ttf);
+}
+body {
+	font: 400 1.8rem/1 'Jost', sans-serif;
+}
+h1, h2, h3 {
+    color:var(--primary-color);
+	font-family: BungeeRegular;
+}
+h2 {
+	color: var(--primary-reverse-color);
+}
+p {
+	margin-top: 5px;
+}
+p:last-child {
+	margin-top: 7px;
+}
+
+
+
+/* start / end */
+#startGame {
+	width: 350px;
+    height: 200px;
+    
+    background-color: rgba(255, 255, 255, 0.7);
+	
+    text-align: center;
+	padding: 10px;
+	margin: 200px auto 0;
+	flex-wrap: wrap;
+	
+	cursor: pointer;
+}
+#end {
+	width: 350px;
+	height: 200px;
+
+	background-color: rgba(255, 255, 255, 0.7);
+
+	text-align: center;
+	padding: 10px;
+	margin: 200px auto 0;
+	flex-wrap: wrap;
+
+	cursor: pointer;
+}
+
+
+
+/* Player & Entities */
+#player {
+	width: 256px;
+    height: 66px;
+    
+	position: absolute;
+	left: 8px;
+    top: 179px;
+    
+    background-image: url(../assets/images/player.png);
+}
+#friend {
+	width: 44px;
+    height: 51px;
+    
+    position: absolute;
+	left: 10px;
+    top: 464px;
+    
+	background-image: url(../assets/images/friend.png);
+}
+#enemy1 {
+	width: 256px;
+    height: 66px;
+    
+	position: absolute;
+	left: 689px;
+    top: 253px;
+    
+	background-image: url(../assets/images/enemy1.png);
+}
+#enemy2 {
+	width: 165px;
+	height: 70px;
+	
+	position: absolute;
+	left: 775px;
+	top: 447px;
+	
+	background-image: url(../assets/images/enemy2.png);
+}
+
+
+
+#separate {
+	width: 100%;
+    height: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+#scoreboard {
+	width: 100%;
+	height: 50px;
+
+	left: 30px;
+	top: 580px;
+	position: absolute;
+}
+#energy {
+	width: 140px;
+	height: 38px;
+
+	left: 750px;
+	top: 7px;
+	position: absolute;
+}
+#shoot {
+	width: 50px;
+	height: 8px;
+
+	position: absolute;
+	background-image: url(../assets/images/shoot.png);
+}
+
+
+
+/* Explosions */
+#explosion1,
+#explosion2 {
+	width: min-content;
+	height: min-content;
+
+	position: absolute;
+}
+#explosion3 {
+	width: 44px;
+	height: 51px;
+
+	position: absolute;
+}
+.explosionGif {
+	width: 150px;
+	height: 150px;
+}
